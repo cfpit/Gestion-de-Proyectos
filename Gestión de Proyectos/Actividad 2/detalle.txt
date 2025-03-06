@@ -1,0 +1,66 @@
+Actividad 2
+Se sabe de un proyecto que inicia el 1 de Marzo de 2022, dicho día, se presentara un político importante a poner la piedra fundamental. El 1 de octubre de 2022, en un acto pre electoral, el mismo político a cortar la cinta de inauguración
+Los días 20 de mayo y 3 de junio son días no laborales en el gremio en que nos encontramos.
+
+Responder:
+Descontando los días feriados y los sábados y domingos. Cuantos días laborales disponemos para la gestión de este proyecto?
+
+
+
+Resolucion:
+
+Utilizar la funcion =DIAS.LAB(S6;G33)-8
+=NETWORKDAYS(S6,G33)-8
+
+Nota: S6 Y G33 deben estar en formato fecha.
+El resultado debe estar en formato General.
+CTRL + 1 permite modificador el formato de celda
+
+Inicio Proyecto: 1 de marzo de 2022
+Fin	Proyecto: 1 de octubre de 2022
+
+No laborales
+20 de mayo
+3 de junio
+
+
+feriados
+24 de marzo
+15 de abril
+25 de mayo
+17 de junio
+20 de junio
+15 de agosto
+
+descontar feriados, sabados y domingos
+
+rta: 154 - 8 = 146
+
+
+marzo: 		23
+abril: 		21
+mayo: 		22
+junio: 		22
+julio: 		21
+agosto: 	23
+sept: 		22
+oct: 		 0
+
+total		154
+--------------------------------------------------------------
+
+
+Actividad 3
+
+Se tiene un proyecto que inicia el 1 de Marzo de 2022, Sabemos que para terminar dicho proyecto necesitamos 100 días hábiles.
+
+Responder:
+Descontando los días feriados y los sábados y domingos Cual seria la fecha final del proyecto?
+
+Utilizar en Excel de Office 365 la funcion:
+=DIA.LAB.INTL(FECHA(2022;3;1); 100; 1)
+=WORKDAY.INTL(FECHA(2022;3;1); 100; 1)
+
+Hasta fin de julio(31/07) son 109 dias -> al 19/07 son 100 dias pero como hay 5 dias feriados -> agregar 5 dias habiles -> 26/07
+
+Fecha de Fin: 26 de Julio de 2022
